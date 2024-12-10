@@ -6,11 +6,11 @@ import Timer from "./components/Timer";
 import "./App.css";
 
 const paragraphs = [
-  "The quick brown fox jumps over the lazy dog. This sentence is a common pangram used to practice typing because it contains all the letters of the English alphabet. Typing it repeatedly can help improve both speed and accuracy.",
-  "In the modern digital age, typing is an indispensable skill. Whether you're drafting an email, writing a report, or chatting with friends, the ability to type quickly and accurately saves time and enhances productivity.",
-  "React is a powerful JavaScript library for building user interfaces. It allows developers to create reusable components, manage state efficiently, and build highly interactive and dynamic web applications with ease.",
-  "JavaScript has evolved significantly since its inception, becoming one of the most widely used programming languages in the world. It powers everything from simple website features to complex server-side applications and mobile app development.",
-  "Regular practice is the key to becoming a proficient typist. By challenging yourself with diverse texts and tracking your",
+  "The quick brown fox jumps over the lazy dog. This sentence is a common pangram used to practice typing because it contains all the letters of the English alphabet. Typing it repeatedly can help improve both speed and accuracy. Many typing programs use this sentence for practice. It’s an effective way to practice typing and improve your skills. Typing quickly and accurately is a valuable skill.",
+  "In the digital age, typing is an essential skill. Whether drafting emails, writing reports, or chatting online, fast typing saves time and enhances productivity. With remote work and online communication growing, typing skills are more important than ever. Being able to type quickly and accurately helps you complete tasks more efficiently. Many professionals, from data entry clerks to software developers, rely on their typing skills.",
+  "React is a powerful JavaScript library for building user interfaces. It allows developers to create reusable components and manage state efficiently. React’s virtual DOM optimizes rendering, improving performance. The component-based architecture makes it easier to maintain and scale applications. React has a strong community and a wide range of tools and libraries to enhance development. React’s flexibility and performance make it a top choice for building dynamic web applications.",
+  "JavaScript is one of the most widely used programming languages today. It’s essential for building interactive websites and applications. JavaScript powers both client-side and server-side development, making it a full-stack language. Its asynchronous nature allows for faster, more responsive applications. JavaScript’s extensive ecosystem includes libraries like React, Angular, and Vue, which help developers build complex applications efficiently. Continuous development of JavaScript ensures it remains relevant and adaptable to the ever-changing needs of modern web development.",
+  "Regular practice is essential for improving typing skills. Typing tests and exercises help increase speed and accuracy. By practicing different texts, you can familiarize yourself with various word patterns and improve muscle memory. Timed typing challenges are an excellent way to track progress and set goals. With consistent practice, you’ll notice improvements in both speed and accuracy, making it easier to complete tasks quickly and with fewer errors. Typing is a skill that improves with dedication.",
 ];
 
 function App() {
@@ -68,9 +68,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Typing Speed Tester</h1>
+      <div className="header">
+        <h1>Typing Speed Tester</h1>
+        <Timer timeLeft={timeLeft} />
+      </div>
+
       <ParagraphDisplay paragraph={currentParagraph} />
-      <Timer timeLeft={timeLeft} />
+
       <TypingArea
         typedText={typedText}
         onInputChange={handleInputChange}

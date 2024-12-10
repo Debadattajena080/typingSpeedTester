@@ -9,7 +9,7 @@ body {
 .App {
   text-align: center;
   max-width: 800px;
-  margin: 2rem auto;
+  margin: auto;
   padding: 1rem;
   background-color: #ffffff;
   border-radius: 12px;
@@ -22,9 +22,18 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  /* border-bottom: solid red ; */
+}
+
 .paragraph-display {
-  margin-bottom: 1.5rem;
-  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -45,7 +54,7 @@ h1 {
 
 .typing-area {
   width: 80%;
-  height: 120px;
+  height: 140px;
   margin: 1rem auto;
   font-size: 1rem;
   padding: 0.8rem;
@@ -60,7 +69,6 @@ h1 {
 
 .typing-area:focus {
   border-color: #0056b3;
-
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -78,8 +86,7 @@ h1 {
 }
 
 .timer {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1.4rem;
   color: #ff4500;
   font-weight: bold;
 }
